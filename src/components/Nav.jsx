@@ -22,7 +22,7 @@ export function Nav() {
 
       {/* Menu List */}
       <div
-        className={`${ isMobileMenuShown === false && "hidden"} w-full lg:w-auto lg-block`}
+        className={`${ isMobileMenuShown === false && "hidden"} w-full lg-block lg:w-auto`}
       >
         <ul className="flex flex-col lg:flex-row bg-gray-50 lg:bg-transparent text-lg border-gray-100 lg:border-none rounded-lg p-4 lg:space-x-8">
           {ROUTES.map((route, i) => {
