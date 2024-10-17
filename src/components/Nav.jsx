@@ -3,7 +3,7 @@ import NikeLogo from "../assets/nike-logo.svg?react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 
-const ROUTES = ["Home","About","Services","Pricing","Contact"];
+const ROUTES = ["Home", "About", "Services", "Pricing", "Contact"];
 
 export function Nav() {
   const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
@@ -37,7 +37,7 @@ export function Nav() {
                   i === 0
                     ? "bg-blue-500 text-white lg:bg-transparent lg:text-blue-500 "
                     : "hover:bg-gray-100"
-                } ${ (i === 3 || i === 4) && "lg:text-white" }`}
+                } ${(i === 3 || i === 4) && "lg:text-white"}`}
                 key={route}
               >
                 <a>{route}</a>
@@ -48,7 +48,7 @@ export function Nav() {
       </div>
 
       {/* Cart button */}
-      <div className="fixed bottom-4 left-4 lg:static lg:mr-8">
+      <div className="btn-press-animation fixed bottom-4 left-4 lg:static lg:mr-8">
         <div className="flex-center h-12 w-12 cursor-pointer rounded-full bg-white shadow-md">
           <TbShoppingBag />
         </div>
