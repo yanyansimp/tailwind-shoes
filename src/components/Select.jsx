@@ -3,11 +3,11 @@ import { twMerge } from "tw-merge";
 
 export function Select({ title, options, className, defaultValue }) {
   return (
-    <div className="relative">
+    <div className="relative dark:text-black">
       <select
         defaultValue={defaultValue || ""}
         className={twMerge(
-          `bg-white w-24 appearance-none border border-gray-300 p-4 ${className}`
+          `dark:text-black bg-white w-24 appearance-none border border-gray-300 p-4 ${className}`
         )}
       >
         <option value="" disabled hidden>
